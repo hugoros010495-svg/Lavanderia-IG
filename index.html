@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavandería IG</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ajustado: quitar tamaños fijos; usar estilos desde styles.css -->
+    <style>
+        /* Mantener solo ajustes menores si es necesario; evitar sobrescribir tamaños */
+        .footer .social-icons a { margin-right: 10px; vertical-align: middle; }
+        .footer .social-icons img { object-fit: contain; display: block; pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo-container">
+            <!-- Añadido: width/height y atributos de rendimiento -->
+            <img src="img/logo IG.jpg" alt="Lavandería IG Logo" width="70" height="70" decoding="async">
+            <h1>Lavandería IG</h1>
+        </div>
+        <nav role="navigation">
+            <a href="#servicios">Servicios</a>
+            <a href="#promos">Promociones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Tu ropa fresca, limpia y suave</h2>
+            <p>Servicio profesional de lavado, planchado y Tintoreria.</p>
+            <a class="btn" href="#contacto">¡Contáctanos!</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="servicios-grid">
+            <div class="card">
+                <!-- Añadido: lazy loading y decoding -->
+                <img src="img/lavado ig.jpg" alt="" loading="lazy" decoding="async" width="800" height="500">
+                <h3>Lavado y Secado</h3>
+                <p>Lavado profesional con productos de alta calidad para cuidar tus prendas.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/planchado ig.jpg" alt="" loading="lazy" decoding="async" width="800" height="500">
+                <h3>Planchado</h3>
+                <p>Tu ropa perfectamente planchada para lucir impecable todos los días.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/prendas delicadas ig.jpg" alt="" loading="lazy" decoding="async" width="800" height="500">
+                <h3>Tintoreria</h3>
+                <p>Cuidado profesional para prendas delicadas y textiles especiales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones -->
+    <section id="promos" class="promos">
+        <h2>Promociones</h2>
+        <p id="promo-text">Cargando promociones...</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>📍 Dirección: Xalapa, Veracruz, Av. Americas no. 373</p>
+        <p>📞 Teléfono: 22 81 12 20 50</p>
+        <p>📩 Email: americasig373@gmail.com</p>
+    </section>
+
+    <!-- footer principal con clase .footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Sección de sucursales -->
+            <div class="footer-section">
+                <h3>Sucursales</h3>
+                <div class="branches">
+                    <div class="branch">
+                        <h4>"Americas"</h4>
+                        <p>Av. Americas No. 378 Col. Laureles</p>
+                    </div>
+                    <div class="branch">
+                        <h4>"Constituyetes"</h4>
+                        <p>Calle Constituyentes de 1857 No. 310 Col. Constituyentes</p>
+                    </div>
+                    <div class="branch">
+                        <h4>"Revolucion"</h4>
+                        <p>Calle Juan de Tecto No. 12 Col. Revolucion</p>
+                    </div>
+                    <div class="branch">
+                        <h4>"Justino Sarmiento"</h4>
+                        <p>Calle 2 No. 15 B Col. Juan de la Luz Enrique</p>
+                    </div>
+                    <div class="branch">
+                        <h4>"Plaza Patio"</h4>
+                        <p>Av. Arco sur Walmart local S03 Col. Reserva Territorial</p>
+                    </div>
+                    <div class="branch">
+                        <h4>"Banderilla"</h4>
+                        <p>Av. Benito Juarez No. 91 Col Lomas de Hidalgo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agregado: Horario de Atención (mismo formato que sucursales) -->
+            <div class="footer-section">
+                <h3>Horario de Atención</h3>
+                <div class="branches">
+                    <div class="branch">
+                        <h4>Lunes a Sábado</h4>
+                        <p>9:30 AM – 7:30 PM</p>
+                    </div>
+                    <div class="branch">
+                        <h4>Domingos</h4>
+                        <p>Cerrado</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tintoreriaIG/?locale=es_LA" target="_blank" aria-label="Facebook">
+                        <img src="img/Facebook.png" alt="Facebook" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://wa.me/522281122050" target="_blank" aria-label="WhatsApp">
+                        <img src="img/whatsapp.png" alt="WhatsApp" loading="lazy" decoding="async">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>  <!-- cierre del footer principal (.footer) -->
+
+    <!-- Movido: footer inferior al final de la página -->
+    <footer class="footer-bottom">
+        <p>© 2025 Lavandería IG — Pensamos en la frescura de tu ropa</p>
+    </footer>
+
+    <!-- Agregado: cargar el script que muestra las promociones -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
